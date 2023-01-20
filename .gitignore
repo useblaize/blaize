@@ -20,3 +20,6 @@ pnpm-debug.log*
 
 # .vscode
 .vscode/
+
+# server
+server/venv/
