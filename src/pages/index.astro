@@ -1,15 +1,17 @@
 ---
+const response = await fetch('http://localhost:8000/');
+const data = await response.json();
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/blaize.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>The Blaize Stack</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1 class="font-bold">{data.generate}</h1>
 	</body>
 </html>
